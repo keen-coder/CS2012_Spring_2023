@@ -7,7 +7,7 @@ Demonstrates some basic concepts of Object-Oriented Programming.
 public class Circle {
 	//Data Fields
     private double radius;
-
+    
     /*Constructor to make a default circle with a radius of 1.*/
     public Circle() { //default constructor (no-arg constructor)
         this.radius = 1;
