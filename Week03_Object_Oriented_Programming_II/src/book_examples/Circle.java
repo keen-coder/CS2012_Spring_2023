@@ -6,7 +6,7 @@ Demonstrates some basic concepts of Object-Oriented Programming.
 
 public class Circle {
 	//Data Fields
-    private double radius;
+	private double radius;
 
     /*Constructor to make a default circle with a radius of 1.*/
     public Circle() { //default constructor (no-arg constructor)
@@ -14,8 +14,8 @@ public class Circle {
     }
 
     /*Constructor to make a circle with a given radius value.*/
-    public Circle(double radius) {
-    	//this.radius = radius;
+    public Circle(double radius) {  
+       	//this.radius = radius;
     	this.setRadius(radius);
     }
     
@@ -24,7 +24,13 @@ public class Circle {
     }
    
     public void setRadius(double radius) {
+    	
+    	
+    	
     	if (radius < 1) {
+    		int x = 10;
+    		
+    		
     		System.out.println("ERROR: Radius cannot be <= 0.");
     		System.out.println("Radius set to default value of 1.");
     		this.radius = 1;
@@ -43,6 +49,7 @@ public class Circle {
     public double perimeter() {
         return 2 * this.radius * Math.PI;
     }
+    
     
    
 }

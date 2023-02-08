@@ -15,6 +15,8 @@ public class PassingObjectsToMethods {
 		
 		
 		Circle c2 = createCircle();
+		
+		System.out.println("Value of: " + c2);
 
 	}
 	
@@ -26,6 +28,8 @@ public class PassingObjectsToMethods {
 		double radius = in.nextDouble();
 		
 		Circle c = new Circle(radius);
+		
+		System.out.println("Value of c: " + c);
 		
 		return c;
 		
