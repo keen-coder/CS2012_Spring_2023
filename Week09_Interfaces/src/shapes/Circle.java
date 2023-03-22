@@ -1,6 +1,7 @@
-package shape;
+package shapes;
 
-public class Circle extends Shape {
+public class Circle 
+	extends Shape implements Comparable<Circle> {
 	
 	private double radius;
 
@@ -84,7 +85,27 @@ public class Circle extends Shape {
 		
 		return result;
 	}
-	
+
+	//Circle c1 = new Circle(5.4);
+	//Circle c2 = new Circle(10.7);
+	//c1.compareTo(c2);
+	@Override
+	public int compareTo(Circle other) {
+		if (this.radius == other.radius) {
+			return 0;
+		}
+		else if (this.radius < other.radius) {
+			return -1;
+		}
+		else {
+			return 1;
+		}
+		
+	}
+
+
+
+
 
 	
 	

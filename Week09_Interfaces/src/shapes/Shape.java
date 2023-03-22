@@ -1,4 +1,4 @@
-package shape;
+package shapes;
 
 //Super class / Parent Class
 public abstract class Shape {

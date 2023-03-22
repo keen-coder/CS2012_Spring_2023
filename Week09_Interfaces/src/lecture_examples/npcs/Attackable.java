@@ -1,4 +1,4 @@
-package class_examples;
+package lecture_examples.npcs;
 
 public interface Attackable {
 	

@@ -1,4 +1,4 @@
-package shape;
+package shapes;
 
 public class Rectangle 
     extends Shape {
@@ -56,6 +56,25 @@ public class Rectangle
 	@Override
 	public double perimeter() {
 		return 2 * (width + height);
+	}
+	
+	@Override
+	public boolean equals(Object other) {
+		if (other == null) {
+			return false;
+		}
+		
+		if ( !(other instanceof Rectangle) ) {
+			return false;
+		}
+		
+		Rectangle temp = (Rectangle)other;
+		
+		boolean superDataFieldsSame = super.equals(other);
+		boolean isWidthSame = this.width == temp.width;
+		boolean isHeightSame = this.height == temp.height;
+		
+		return superDataFieldsSame && isWidthSame && isHeightSame;
 	}
 
 	@Override
