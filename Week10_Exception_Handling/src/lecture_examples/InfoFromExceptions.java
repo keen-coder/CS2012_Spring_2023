@@ -15,7 +15,8 @@ public class InfoFromExceptions {
 
 	}
 	
-	public static void myMethod() throws NullPointerException {
+	public static void myMethod() 
+			throws NullPointerException {
 		throw new NullPointerException("Object not initialized.");
 	}
 

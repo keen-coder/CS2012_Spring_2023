@@ -1,5 +1,6 @@
 package book_examples;
 
+//Extended Exception makes this a checked exception
 public class InvalidRadiusException extends Exception {
 	private double radius;
 
