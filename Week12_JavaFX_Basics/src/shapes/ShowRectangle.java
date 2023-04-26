@@ -35,7 +35,7 @@ public class ShowRectangle extends Application {
     pane.getChildren().add(new Text(10, 107, "r3"));
     pane.getChildren().add(r3);
     
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 15; i++) {
       Rectangle r = new Rectangle(100, 50, 100, 30);
       r.setRotate( (i * 360) / 20);
       r.setFill(Color.color(Math.random(), Math.random(), 

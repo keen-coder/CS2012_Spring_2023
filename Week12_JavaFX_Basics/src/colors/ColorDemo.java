@@ -37,21 +37,21 @@ public class ColorDemo extends Application {
 
 		//Create a Color object using the Color() constructor.
 		//Not the preferred way to create colors.
-		Color constructorColor1 = new Color(0.5, 0.14, 0.333, 0.75);
+		Color constructorColor1 = new Color(0.5, 0.14, 0.333, 0.25);
 		Color constructorColor2 = new Color(0.4, 0.5, 0.654, 1.0);
 		circle1.setFill(constructorColor1);
 		circle5.setFill(constructorColor2);
 		
 		//Create a Color object using the static Color.rgb() method. 
-		Color rgbColor = Color.rgb(28, 230, 44, 1.0);
+		Color rgbColor = Color.rgb(28, 214, 149, 1.0);
 		circle2.setFill(rgbColor);
 		
 		//Create color using the static Color.web() method.
-		Color hexColor = Color.web("#f0be0a", 1.0);
+		Color hexColor = Color.web("#7d26c9", 1.0);
 		circle3.setFill(hexColor);
 		
 		//Create color using a built-in Color.CONSTANT_NAME constant.
-		Color constColor = Color.AQUA;
+		Color constColor = Color.TOMATO;
 		circle4.setFill(constColor);
 	
 		//Finish setting up the Scene and Stage.

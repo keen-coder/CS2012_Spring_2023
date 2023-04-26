@@ -14,8 +14,8 @@ public class ShowFlowPane extends Application {
 		// Create a pane and set its properties
 		FlowPane pane = new FlowPane();
 		pane.setPadding(new Insets(11, 12, 13, 14));
-		pane.setHgap(5);
-		pane.setVgap(5);
+		pane.setHgap(10);
+		pane.setVgap(10);
 
 		// Place nodes in the pane
 		pane.getChildren().addAll(new Label("First Name:"), 
